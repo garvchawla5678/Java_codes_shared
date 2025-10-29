@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.Binary_Search;
 
 public class leetcode_240_optimized {
     static void main() {

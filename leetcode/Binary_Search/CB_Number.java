@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.Binary_Search;
 
 public class CB_Number {
     static void main() {
