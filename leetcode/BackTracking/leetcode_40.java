@@ -27,7 +27,7 @@ public class leetcode_40 {
             return;
         }
         for (int i = idx; i < arr.length; i++) {
-            if (i > idx && arr[i] == arr[i - 1]) {
+            if (i > idx && arr[i] == arr[i - 1]) {     // here we remove duplication just like in ThreeSum problem
                 continue;
             }
             if (sum - arr[i] >= 0) {
