@@ -2,15 +2,16 @@ package leetcode.Kadane_Algo;
 
 public class leetcode_918 {
     static void main() {
-        int[] arr = {-3,-2,-3};
+        int[] arr = { -3, -2, -3 };
         System.out.println(maxSubArray(arr));
     }
-    static int maxSubArray(int[] arr){
-        if(arr.length == 1){
+
+    static int maxSubArray(int[] arr) {
+        if (arr.length == 1) {
             return arr[0];
         }
         int arrSum = 0;
-        for(int i: arr){
+        for (int i : arr) {
             arrSum += i;
         }
         int ans = Integer.MIN_VALUE;
@@ -35,9 +36,9 @@ public class leetcode_918 {
                 curSum1 = 0;
             }
         }
-        if(arrSum<0){
+        if (arrSum < 0) {
             return ans;
         }
-        return Math.max(ans,arrSum-ans1);
+        return Math.max(ans, arrSum - ans1);
     }
 }
